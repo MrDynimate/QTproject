@@ -50,8 +50,8 @@
 #define MAX_CONNEXTIONS 50
 #define BUFFER_SIZE 1024
 
-#define HOST "39.103.167.197"
-#define PORT 80
+#define HOST "43.156.40.15"//设置主机为我们位于新加坡的腾讯云服务器（本机）
+#define PORT 7788 //开放监听端口7788
 
 
 #endif

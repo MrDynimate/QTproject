@@ -46,9 +46,9 @@
 #define HUMUN_MODE 1         // 悔棋步数：人类 1 步
 #define AI_MODE 2            // 悔棋步数：AI 2 步
 
-// 联机服务器
-// HOST 填入服务器 IP 地址
-#define HOST "39.103.167.197"
-#define PORT 80
+
+
+#define HOST "43.156.40.15"//设置我们的目标服务器地址
+#define PORT 7788 //设置服务器监听端口
 
 #endif // COMMAND_H
