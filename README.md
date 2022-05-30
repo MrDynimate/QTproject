@@ -27,6 +27,6 @@
 ---
 ## 实现方式：
 * 通过腾讯云租赁VPS，安装Centos 7.6镜像系统，更新服务器gcc库至gcc-12.1.0版本（以此解决gcc版本过低导致的找不到头文件的问题）
-![alt jpg](https://github.com/MrDynimate/QTproject/images/running.jpg）
+![](https://github.com/MrDynimate/QTproject/images/running.jpg）
 * 关闭Centos的FireWall，开放所有端口,以便实现服务器与客户端之间的连接；
 * “三次握手，四次挥手”之后建立服务器与客户端之间的连接；
