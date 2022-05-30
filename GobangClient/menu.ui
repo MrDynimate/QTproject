@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>600</height>
+    <width>610</width>
+    <height>610</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -31,8 +31,8 @@
      <rect>
       <x>570</x>
       <y>0</y>
-      <width>31</width>
-      <height>31</height>
+      <width>41</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -45,10 +45,10 @@
    <widget class="QPushButton" name="min_btn">
     <property name="geometry">
      <rect>
-      <x>540</x>
+      <x>530</x>
       <y>0</y>
-      <width>25</width>
-      <height>31</height>
+      <width>41</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -63,7 +63,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>601</width>
+      <width>611</width>
       <height>630</height>
      </rect>
     </property>
@@ -77,10 +77,10 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>60</y>
-      <width>391</width>
-      <height>71</height>
+      <x>180</x>
+      <y>40</y>
+      <width>421</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -93,10 +93,10 @@
    <widget class="QPushButton" name="AiGame_btn">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>240</y>
-      <width>181</width>
-      <height>61</height>
+      <x>270</x>
+      <y>110</y>
+      <width>331</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -115,10 +115,10 @@
    <widget class="QPushButton" name="LocalGame_btn">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>320</y>
-      <width>181</width>
-      <height>61</height>
+      <x>210</x>
+      <y>170</y>
+      <width>331</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -137,9 +137,9 @@
    <widget class="QPushButton" name="NetGame_btn">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>400</y>
-      <width>181</width>
+      <x>270</x>
+      <y>230</y>
+      <width>271</width>
       <height>61</height>
      </rect>
     </property>
@@ -157,12 +157,12 @@
     </property>
    </widget>
    <zorder>label</zorder>
-   <zorder>min_btn</zorder>
-   <zorder>close_btn</zorder>
-   <zorder>label_2</zorder>
    <zorder>AiGame_btn</zorder>
    <zorder>LocalGame_btn</zorder>
    <zorder>NetGame_btn</zorder>
+   <zorder>label_2</zorder>
+   <zorder>min_btn</zorder>
+   <zorder>close_btn</zorder>
   </widget>
  </widget>
  <resources/>

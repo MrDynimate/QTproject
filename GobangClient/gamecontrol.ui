@@ -46,39 +46,9 @@
    </property>
    <property name="palette">
     <palette>
-     <active>
-      <colorrole role="Base">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </active>
-     <inactive>
-      <colorrole role="Base">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </inactive>
-     <disabled>
-      <colorrole role="Base">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>177</red>
-         <green>114</green>
-         <blue>60</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </disabled>
+     <active/>
+     <inactive/>
+     <disabled/>
     </palette>
    </property>
    <widget class="QWidget" name="widget_3" native="true">
@@ -230,9 +200,9 @@
    <widget class="QPushButton" name="min_btn">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>140</x>
       <y>0</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
