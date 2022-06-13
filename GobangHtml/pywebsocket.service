@@ -1,0 +1,12 @@
+[Unit]
+Description=websocket service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/lib/python3.6 /home/wbsockt/pywebsocket/pywebsocket/mod_pywebsocket/standalone.py -p 8808 -w /home/wbsockt/pywebsocket/pywebsocket/mod_pywebsocket/example/
+ExecStop=/bin/kill -15 $MAINPID 
+
+[Install]
+WantedBy=multi-user.target
+
