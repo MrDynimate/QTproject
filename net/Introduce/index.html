@@ -10,6 +10,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="mouse.js"></script>
+    <script type="text/javascript" src="rain.js"></script>
     <title>MoonTechGroup</title>
     <!--css部分-->
     <style>
@@ -77,10 +79,19 @@
 </head>
 
 <body>
+    <!--鼠标特效部分-->
+    <span class="js-cursor-container"></span>
+
+    <!--代码雨部分-->
+    <script type="text/javascript">
+        rain();
+    </script>
+
     <!--标题部分-->
     <div class="title">
         <h1>Member of Moon Tech Group</h1>
     </div>
+
     <!--组员展示界面-->
     <div class="box">
         <img src="QQ图片20200914221312.jpg" alt="" class="box-img">
@@ -106,6 +117,7 @@
         <h3>If you want to know more about me,please click this</h3>
         <a href="Chris2.html" class="one">Daydreamfector</a>
     </div>
+
 </body>
 
 </html>

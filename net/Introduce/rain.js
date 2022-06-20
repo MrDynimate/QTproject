@@ -1,4 +1,4 @@
-(function () {
+(function rain() {
     var canvas = document.getElementById_x('canvas');
     var ctx = canvas.getContext('2d');
     var w = document.documentElement.offsetWidth;
