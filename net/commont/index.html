@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>MoonTechGroup丨Gobang Project</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="homies.css" />
+    <script type="text/javascript" src="mouse.js"></script>
+    <script src="Sakura.js"></script>
+</head>
+
+<body>
+    <!--鼠标特效部分-->
+    <span class="js-cursor-container"></span>
+
+    <div class="body">
+        <div class="content">
+            <div class="stars"></div>
+            <img class="bgc" src="https://w.wallhaven.cc/full/od/wallhaven-od5oym.jpg" width="100%" alt="">
+            <h1 class="title">Gobang</h1>
+            <img class="icon" src="./img/down.png" alt="">
+            <div class='ribbon'>
+                <a href='./index.html'><span>Home</span></a>
+                <a href='./about.html'><span>About</span></a>
+
+            </div>
+        </div>
+
+        <div class="introduce">
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="./img/one.png" alt="">
+                <span
+                    class="introduce_item_title">第一轮迭代：通过QT在本地绘制五子棋盘,实现单机双人五子棋对战。本地棋盘负责游戏的主要逻辑如落子、胜负判定、切换黑白方落子、限制落子方等，同时负责渲染棋盘上的各个部分。定义了一个函数来接受下棋人数,本地双人为两个人,与电脑下棋时则是默认电脑为黑,故只接受白方下棋。预留的联机对战的时候则是将服务器返回数据的一方作为下棋方,同时采用了mouseReleaseEvent来获取鼠标的点击位置,并用了引导点击,将周围一部分范围也纳入了点击范围,防止出现点击不到准确的点无法下棋的情况。
+                </span>
+
+            </div>
+            <div class="introduce_item">
+                <span
+                    class="introduce_item_titles">第二轮迭代：采用客户机/服务器模式（Client/Server）采用客户机/服务器模式（Client/Server）通过socket协议实现服务器端（Server）与客户端（Client）的沟通联系；通过腾讯云租赁VPS，安装Centos
+                    7.6镜像系统，更新服务器gcc库至gcc-12.1.0版本（以此解决gcc版本过低导致的找不到头文件的问题）</span>
+                <img class="introduce_item_img" src="./img/two.png" alt="">
+            </div>
+
+        </div>
+        <audio autoplay="autoplay" id="audio" loop="loop">
+            <source src="./video/lastlife.mp3" type="audio/MP3">
+
+        </audio>
+        <img class="music_img" src="./img/music_img.png" alt="">
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <span class="copyright">&copy; 2022 <a href="http://dynamicis.top/index.php/2022/06/12/gobang-game/"
+                target="_blank">MoonTechGroup</a>丨<a href="http://www.devdemo1.club/courseweb/" target="_blank"
+                rel="nofollow">重庆大学明月科创实验班</a></span>
+    </footer>
+</body>
+<script>
+    let mucics = document.getElementById('audio')
+    document.body.addEventListener('mousemove', function () {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+</script>
+
+</html>
