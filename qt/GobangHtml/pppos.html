@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mr.Dynamic's TestWeb(dynamicis.top)</title>
+
+    <script type="text/javascript">
+        function WebSocketTest() {
+            if ("WebSocket" in window) {
+                alert("您的浏览器支持 WebSocket!");
+
+                const ws = new WebSocket('ws://43.156.40.15:7788')
+                ws.onopen = () => {
+                    ws.onmessage = (msg) => {
+                        msg.data
+                    }
+                    ws.send('数据')
+                }
+
+                ws.onclose = fn
+            }
+
+            else {
+                // 浏览器不支持 WebSocket
+                alert("您的浏览器不支持 WebSocket!");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="sse">
+        <a href="javascript:WebSocketTest()">运行 WebSocket</a>
+    </div>
+
+</body>
+
+</html>
